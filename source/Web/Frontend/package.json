@@ -1,0 +1,42 @@
+{
+    "name": "frontend",
+    "description": "frontend",
+    "author": "Author",
+    "license": "MIT",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@angular/common": "7.2.13",
+        "@angular/compiler": "7.2.13",
+        "@angular/core": "7.2.13",
+        "@angular/forms": "7.2.13",
+        "@angular/http": "7.2.13",
+        "@angular/platform-browser": "7.2.13",
+        "@angular/platform-browser-dynamic": "7.2.13",
+        "@angular/router": "7.2.13",
+        "cleave.js": "1.4.10",
+        "core-js": "3.0.1",
+        "rxjs": "6.4.0",
+        "uikit": "3.1.2",
+        "zone.js": "0.9.0"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "0.13.8",
+        "@angular-devkit/build-optimizer": "0.13.8",
+        "@angular/cli": "7.3.8",
+        "@angular/compiler-cli": "7.2.13",
+        "@angular/language-service": "7.2.13",
+        "@types/node": "11.13.5",
+        "codelyzer": "5.0.0",
+        "tslint": "5.16.0",
+        "typescript": "3.2.4"
+    },
+    "scripts": {
+        "restore": "npm install --suppess-warnings --loglevel=error",
+        "serve": "ng lint && ng serve",
+        "container": "ng lint && ng build --configuration=container",
+        "development": "ng lint && ng build --configuration=development",
+        "staging": "ng lint && ng build --configuration=staging",
+        "production": "ng lint && ng build --configuration=production"
+    }
+}
